@@ -1,8 +1,10 @@
+DEPS= Thai
 compile: main.c 
-	 gcc main.c -o ming
-
-run: ming
-	 ./ming
-
-clean: ming
-	 rm ming
+	 gcc main.c -o $(DEPS)
+	 
+run: $(DEPS)
+	 ./$(DEPS)
+	 
+clean: $(DEPS)
+	 rm $(DEPS)
+	 
